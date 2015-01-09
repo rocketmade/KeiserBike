@@ -13,6 +13,8 @@
 		327104E51A608B87002EF83F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327104E41A608B87002EF83F /* Images.xcassets */; };
 		327104E81A608B87002EF83F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327104E61A608B87002EF83F /* LaunchScreen.xib */; };
 		327104F41A608B87002EF83F /* KeiserBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327104F31A608B87002EF83F /* KeiserBikeTests.swift */; };
+		327104FE1A608BFC002EF83F /* KeiserBikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327104FD1A608BFC002EF83F /* KeiserBikeManager.swift */; };
+		327104FF1A608E3A002EF83F /* KeiserBikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327104FD1A608BFC002EF83F /* KeiserBikeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		327104ED1A608B87002EF83F /* KeiserBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeiserBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327104F21A608B87002EF83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327104F31A608B87002EF83F /* KeiserBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeiserBikeTests.swift; sourceTree = "<group>"; };
+		327104FD1A608BFC002EF83F /* KeiserBikeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeiserBikeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		327104DA1A608B87002EF83F /* KeiserBike */ = {
 			isa = PBXGroup;
 			children = (
+				327104FD1A608BFC002EF83F /* KeiserBikeManager.swift */,
 				327104DD1A608B87002EF83F /* AppDelegate.swift */,
 				327104DF1A608B87002EF83F /* ViewController.swift */,
 				327104E11A608B87002EF83F /* Main.storyboard */,
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327104FE1A608BFC002EF83F /* KeiserBikeManager.swift in Sources */,
 				327104E01A608B87002EF83F /* ViewController.swift in Sources */,
 				327104DE1A608B87002EF83F /* AppDelegate.swift in Sources */,
 			);
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327104F41A608B87002EF83F /* KeiserBikeTests.swift in Sources */,
+				327104FF1A608E3A002EF83F /* KeiserBikeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
