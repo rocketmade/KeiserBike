@@ -109,13 +109,13 @@ struct BikeData {
             buildMinor: t.buildMinor,
             dataType: t.dataType,
             bikeId: t.bikeId,
-            rpm: Float(t.rpm) / 10.0,
-            heartRate: Float(t.heartRate) / 10.0,
-            power: t.power,
-            kCal: t.kCal,
+            rpm: Float(CFSwapInt16LittleToHost(t.rpm)) / 10.0,
+            heartRate: Float(CFSwapInt16LittleToHost(t.heartRate)) / 10.0,
+            power: CFSwapInt16LittleToHost(t.power),
+            kCal: CFSwapInt16LittleToHost(t.kCal),
             minutes: t.minutes,
             seconds: t.seconds,
-            trip: Float(t.trip) / 10.0,
+            trip: Float(CFSwapInt16LittleToHost(t.trip)) / 10.0,
             gear: t.gear)
     }
     

@@ -11,33 +11,23 @@ import XCTest
 
 class KeiserBikeTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testExample() {
-        // This is an example of a functional test case.
         
+        //Sample test data taken from the Keiser developer website
         let bytes: [UInt8] = [0x02, 0x01, 0x06, 0x13, 0x00, 0x38, 0x38, 0x03, 0x46, 0x05, 0x73, 0x00, 0x0D, 0x00, 0x04, 0x27, 0x01, 0x00, 0x0A]
         var testData = NSMutableData(bytes: bytes, length: bytes.count)
         let bikeData = BikeData.fromNSData(testData)
-        assert(bikeData.buildMajor == 6, "")
-        assert(bikeData.buildMinor == 19, "")
-        assert(bikeData.dataType == 0, "")
-        assert(bikeData.bikeId == 56, "")
-        assert(bikeData.rpm == 82.4, "")
-        assert(bikeData.heartRate == 135.0, "")
-        assert(bikeData.power == 115, "")
-        assert(bikeData.kCal == 13, "")
-        assert(bikeData.minutes == 4, "")
-        assert(bikeData.seconds == 39, "")
-        assert(bikeData.trip == 0.1, "")
-        assert(bikeData.gear == 10, "")
+        XCTAssert(bikeData.buildMajor == 6, "")
+        XCTAssert(bikeData.buildMinor == 19, "")
+        XCTAssert(bikeData.dataType == 0, "")
+        XCTAssert(bikeData.bikeId == 56, "")
+        XCTAssert(bikeData.rpm == 82.4, "")
+        XCTAssert(bikeData.heartRate == 135.0, "")
+        XCTAssert(bikeData.power == 115, "")
+        XCTAssert(bikeData.kCal == 13, "")
+        XCTAssert(bikeData.minutes == 4, "")
+        XCTAssert(bikeData.seconds == 39, "")
+        XCTAssert(bikeData.trip == 0.1, "")
+        XCTAssert(bikeData.gear == 10, "")
     }
 }
